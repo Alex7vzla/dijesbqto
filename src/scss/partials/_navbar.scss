@@ -1,0 +1,195 @@
+header {
+
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: none;
+
+    .navbar {
+        position: relative;
+
+        background: linear-gradient(90deg, hsla(0, 0%, 22%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 100%;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: #dddddd;
+            font-size: 2rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        span:hover {
+            transform: rotate(-15deg);
+            cursor: pointer;
+        }
+    }
+    
+    .nav-links-fullscreen {
+        display: none;
+    }
+
+    .toggle {
+        height: 100%;
+        width: 70px;
+        display: flex;
+        align-items: center;
+
+        button:hover {
+            cursor: pointer;
+        }
+
+    }
+
+    .nav-links-mobile {
+
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+        ul {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            background: none;
+
+            li {
+
+                width: 100%;
+                padding: 15px 0;
+                background-color: #414040;
+                cursor: pointer;
+
+    
+                a {
+                    color: #dddddd;
+                    background-color: none;
+
+                }
+            }
+    
+            li:hover{
+
+                background-color: #dddddd;
+
+                a{
+                    color: #414040;
+                }
+
+            }
+
+            .contact-btn-nav-mobile {
+                display: flex;
+                align-items:center;
+                justify-content: center;
+
+                .icon-ref {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #25D366;
+                    padding: 0;
+                    transition: all 0.3s ease;
+                }
+
+                .icon-ref:hover{
+                    transform: scale(1.1);
+                }
+
+            }
+
+            .contact-btn-nav-mobile:hover {
+                background-color: #dddddd;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+
+    header {
+
+        .navbar {
+
+            display: flex;
+            justify-content:space-between;
+
+            .toggle {
+                display: none;
+            }
+        
+            .nav-links-mobile {
+                display: none;
+            }
+        
+            .nav-links-fullscreen {
+        
+                display: flex;
+                justify-content:flex-end;
+                align-items: center;
+                height: 65px;
+                width: 100%;
+                padding-bottom: 5px;
+            
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    list-style: none;
+                    padding: 0 50px;
+
+                    li {
+                        padding: 0 30px;
+                        transition: all 0.3s ease;
+                        
+                        a {
+                            color: white;
+                        }
+                    }
+
+                    li:hover {
+                        transform: scale(1.1);
+                    }
+                    .contact-btn-nav {
+                        display: flex;
+                        flex-direction: row;
+                        align-items:center;
+                        justify-content: space-around;
+                        margin-left: 30px;
+                        border-radius: 30px;
+                        background-color: #25D366;
+
+
+                        .boxi {
+                            margin-left: 10px;
+                            margin-top: 5px;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}
+

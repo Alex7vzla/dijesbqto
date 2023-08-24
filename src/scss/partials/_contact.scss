@@ -1,0 +1,207 @@
+
+.contact {
+
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(0, 0%, 22%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    color: #dddddd;
+
+    .title {
+
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        margin-top: 50px;
+        margin-bottom: -30px;
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        span{
+
+        }
+
+    }
+
+    .box-social-media {
+
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 30px;
+
+        .box-media-ml{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg, #fff600, #e6cf00);
+            transition: all 0.3s ease;
+
+            img {
+                object-fit: cover;
+                width: 65%;
+                height: 60%;
+                transition: all 0.3s ease;
+            }
+
+        }
+
+        .box-media-ml:hover{
+            width: 200px;
+            height: 70px;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: scale(1.1);
+
+            img {
+                width: 25%;
+                height: 50%;
+                transform:translateX(-60px)
+            }
+        }
+
+        .box-media-fb{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg, #016cf1, #015bcb);
+            transition: all 0.3s ease;
+
+            img {
+                object-fit: cover;
+                width: 65%;
+                height: 65%;
+                transition: all 0.3s ease;
+
+            }
+
+        }
+
+        .box-media-fb:hover{
+            width: 200px;
+            height: 70px;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: scale(1.1);
+
+            img {
+                width: 27%;
+                height: 75%;
+                transform:translateX(-60px)
+            }
+        }
+
+        .box-media-inst{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(45deg, #f9ce34, #ee2a7b,  #6228d7);
+            transition: all 0.3s ease;
+
+            img {
+                object-fit: cover;
+                width: 65%;
+                height: 65%;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+
+            }
+
+        }
+
+        .box-media-inst:hover{
+            width: 200px;
+            height: 70px;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: scale(1.1);
+
+            img {
+                width: 27%;
+                height: 75%;
+                transform:translateX(-60px)
+            }
+            
+        }
+
+        .box-media-what{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg, #28e26d, #21be5c);
+            transition: all 0.3s ease;
+
+            img {
+                object-fit: cover;
+                width: 65%;
+                height: 65%;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+
+            }
+        }
+
+        .box-media-what:hover{
+            width: 200px;
+            height: 70px;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: scale(1.1);
+
+            img {
+                width: 27%;
+                height: 75%;
+                transform:translateX(-60px)
+            }
+        }
+    }
+}
+
+@media (min-width:600px){
+    .contact {
+
+        .title {
+    
+            h2{
+    
+            }
+    
+            span{
+    
+            }
+    
+        }
+    
+        .box.social-media {
+    
+            .box-media{
+    
+            }
+        }
+    }
+}
